@@ -1,10 +1,11 @@
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 
 float average(int i1, int i2, int i3)
 {
-	return i1 + i2 + i3 / 3.0f;
+	return (i1 + i2 + i3) / 3.0;
 }
 
 int main()
@@ -17,7 +18,8 @@ int main()
 
 	float a = average(n1, n2, n3);
 
-	cout << setprecision(1) << fixed << "The average is " << a << endl;
-
+	cout << setprecision(2) << fixed << "The average is " << a << endl;
+	
+	system("pause");
 	return 0;
 }
